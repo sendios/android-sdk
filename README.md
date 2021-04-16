@@ -45,11 +45,11 @@ ensure that you are viewing the file in text editor mode.
 beneath the <activity></activity> tag:
 
 ```build.gradle
-     <meta-data android:name="io.corp.genesis.sendios.appId"
+     <meta-data android:name="io.corp.sendios.appId"
       android:value="{YOUR_APP_ID}"/>
-     <meta-data android:name="io.corp.genesis.sendios.appClientId"
+     <meta-data android:name="io.corp.sendios.appClientId"
       android:value="{YOUR_CLIENT_ID}"/>
-     <meta-data android:name="io.corp.genesis.sendios.clientToken"
+     <meta-data android:name="io.corp.sendios.clientToken"
       android:value="{YOUR_CLIENT_TOKEN}"/>
 ```
 3. Replace {YOUR_APP_ID}, {YOUR_APP_CODE} and {YOUR_CLIENT_TOKEN} with the appropriate credentials for your application.
@@ -58,7 +58,7 @@ beneath the <activity></activity> tag:
 Also creates session in analytics
 
 ```kotlin
-import io.corp.genesis.sendios.Sendios
+import io.corp.sendios.Sendios
 
 class MainActivity : AppCompatActivity() {
 
@@ -76,7 +76,7 @@ Log a user's email and unique id if any.
 Additional you can provide more product information for analytics and etc.
 
 ```kotlin
-Sendios.logUser("AlexGenesisSendios@gmail.com")
+Sendios.logUser("AlexSendios@gmail.com")
 ```
 
 # Log events
@@ -95,7 +95,7 @@ Sendios.logEvent("some_event_name", "some_event_value")
 Upon receiving push-token just forward it to Sendios
 
 ```java
-import io.corp.genesis.sendios.Sendios;
+import io.corp.sendios.Sendios;
 
 import static android.content.ContentValues.TAG;
 
